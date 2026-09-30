@@ -1,0 +1,23 @@
+---
+config:
+  theme: 'neo'
+---
+
+classDiagram
+direction LR
+  class Professor {
+    + teach() void
+    + conductResearch() void
+  }
+  class Department {
+    - profs: Professor[*]
+    + hire(p: Professor) void
+  }
+  class University {
+    - name
+    - depts: Department[*]
+    + awardDegrees() void
+  }
+
+  University "1" o-- "1..*" Department
+  Department "1" o-- "1..*" Professor

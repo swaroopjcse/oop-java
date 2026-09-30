@@ -1,0 +1,24 @@
+---
+config:
+  theme: neo
+  
+---
+
+classDiagram
+  direction RL
+  
+  class Employee {
+    - name: String
+    - salary: double
+    + getName()
+    + getSalary()
+    + setSalary()
+  }
+
+  class Manager {
+    - bonus: double
+    + getSalary() 
+    + setBonus()
+  }
+
+  Manager --|> Employee

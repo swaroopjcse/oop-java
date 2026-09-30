@@ -1,0 +1,19 @@
+classDiagram
+    direction LR
+
+    class Vehicle
+
+    class Car 
+
+    class Engine
+
+    class EngineOil
+
+    %% Inheritance (Is-A)
+    Car --|> Vehicle
+
+    %% Aggregation (Has-A)
+    Car "1" o-- "1" Engine
+
+    %% Dependency (Uses-A)
+    Engine ..> EngineOil

@@ -1,0 +1,33 @@
+---
+title: UPI Wallet
+---
+
+classDiagram
+  note "All methods/fields are not\n necessarily shown\n in a UML class diagram"
+
+  Wallet "1" o-- "*" Transaction
+  Wallet "1" --o "1" WalletAnalyzer
+
+  class Transaction {
+    - String transactionID;
+    - double amount;
+    - boolean creditTransaction;
+    - LocalDateTime timestamp;
+  }
+
+  class Wallet {
+    - String upiId;
+    - double balance;
+    - Transaction[ ] transactions;
+
+    + addMoney(amount) void
+    + deductMoney(amount) void
+  }
+
+  class WalletAnalyzer {
+    - Wallet wallet;
+
+    + totalAmountCredited() double
+    + totalAmountDebited() double
+    + expenditureBetween(startDate, endDate) double
+  }

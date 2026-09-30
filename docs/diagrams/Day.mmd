@@ -1,0 +1,9 @@
+classDiagram
+  class Day <<interface>> {
+    + daysFrom(Day other) int
+    + plusDays(int n) Day
+  }
+
+  Day <|.. DaySimple
+  Day <|.. DayJulian
+  Day <|.. DayJulianCached
