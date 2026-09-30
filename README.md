@@ -7,7 +7,8 @@ Welcome to my public code repository used for academic instruction. This reposit
 - `src/main/{java|test}/book/` - Examples adapted or sourced from Cay Horstmann's [textbook](https://horstmann.com/oodp3/) and associated materials.
 - `src/main/{java|test}/patterns/` - Standard OOP design pattern examples (e.g., Vehicle/Shape hierarchies, Factory, Observer).
 - `src/main/{java|test}/<other_packages>` - Custom examples, exercises, and architectural designs created by Swaroop Joshi.
-- `docs/diagrams/` - UML diagrams and visual representations of class structures and relationships.
+- `docs/diagrams/` - UML diagrams and visual representations of class structures and relationships (with [Mermaid](https://mermaid.ai/open-source/intro/) syntax).
+  - To visualize and edit these diagrams, students can use the [Mermaid Live Editor](https://mermaid.live/) or integrate Mermaid into their IDEs (e.g., [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=vstirbu.vscode-mermaid-preview)).
 
 ---
 
