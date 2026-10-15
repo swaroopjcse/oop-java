@@ -1,0 +1,62 @@
+---
+config:
+  theme: 'neo'
+---
+
+classDiagram
+  direction BT
+  %% class Animal <<interface>> {
+  class Animal <<abstract>> {
+    - int legs
+    + eat()*
+    + sleep()*
+    + breathe()
+  }
+
+  %% class Dog
+
+  %% class Cat
+
+  %% class Lion
+
+  class Feline <<abstract>> {
+    + eat()
+  }
+  Feline --|> Animal
+
+  Dog --|> Animal
+  Lion --|> Feline
+  Cat --|> Feline
+
+  class Cat {
+    + sleep()
+  }
+
+  class Lion {
+    + sleep()
+  }
+
+  class Dog {
+    + eat()
+    + sleep()
+  }
+
+  class Dog
+
+  class Cat
+
+  class Lion
+
+  %% Dog --|> Animal
+  %% Cat --|> Animal
+  %% Lion --|> Animal
+
+  class Pet <<interface>> {
+    + play()
+  }
+  Dog ..|> Pet
+  Cat ..|> Pet
+
+  %% Dog ..|> Animal
+  %% Cat ..|> Animal
+  %% Lion ..|> Animal

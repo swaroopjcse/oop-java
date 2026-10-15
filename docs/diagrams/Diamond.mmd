@@ -1,0 +1,25 @@
+---
+config:
+  theme: 'neo'
+---
+
+classDiagram
+  class A <<interface>> {
+    + foo()
+  }
+  class B <<interface>> {
+    %% + foo()
+  }
+
+  class C <<interface>> {
+    %% + foo()
+  }
+
+  class D {
+    + foo()
+  }
+
+  A <|-- B
+  A <|-- C
+  B <|.. D
+  C <|.. D

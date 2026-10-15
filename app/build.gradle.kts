@@ -34,7 +34,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "inheritance.EmployeeTester"
+    mainClass = "book.inheritance.EmployeeTester"
 }
 
 tasks.named<Test>("test") {
