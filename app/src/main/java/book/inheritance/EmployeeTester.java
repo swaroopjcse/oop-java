@@ -10,7 +10,5 @@ public class EmployeeTester {
 
     Employee m2 = new Manager("Sanjay");
     System.out.println(m2.getName() + " - " + m2.getSalary());
-
-    ((Manager)m2).setBonus(20000); // Syntax error!
   }
 }
