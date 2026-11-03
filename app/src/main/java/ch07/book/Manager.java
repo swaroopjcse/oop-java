@@ -1,11 +1,13 @@
-package book.inheritance;
+package ch07.book;
 
 /**
  * Represents a Manager in an organization.
  * 
  * <hr/>
- * Note: This example is adapted from Cay Horstmann's Object-Oriented Design and Patterns.
- * Included here for educational demonstration purposes in accordance with textbook guidelines.
+ * Note: This example is adapted from Cay Horstmann's Object-Oriented Design and
+ * Patterns.
+ * Included here for educational demonstration purposes in accordance with
+ * textbook guidelines.
  */
 public class Manager extends Employee {
   private double bonus;

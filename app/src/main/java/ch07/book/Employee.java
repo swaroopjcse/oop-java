@@ -1,4 +1,4 @@
-package book.ch07;
+package ch07.book;
 
 import java.time.Instant;
 import java.util.Date;

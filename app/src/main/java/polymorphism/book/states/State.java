@@ -1,4 +1,4 @@
-package book.polymorphism.states;
+package polymorphism.book.states;
 
 public class State implements Comparable<State> {
   private String name;

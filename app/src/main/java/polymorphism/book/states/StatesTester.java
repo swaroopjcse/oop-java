@@ -1,4 +1,4 @@
-package book.polymorphism.states;
+package polymorphism.book.states;
 
 import java.util.ArrayList;
 import java.util.Collections;

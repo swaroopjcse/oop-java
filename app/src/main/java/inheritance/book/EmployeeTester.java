@@ -1,4 +1,4 @@
-package book.inheritance;
+package inheritance.book;
 
 public class EmployeeTester {
   public static void main(String[] args) {

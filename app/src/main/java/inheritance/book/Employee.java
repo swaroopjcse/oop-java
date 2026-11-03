@@ -1,4 +1,4 @@
-package book.inheritance;
+package inheritance.book;
 
 /**
  * 

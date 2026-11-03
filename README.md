@@ -4,7 +4,7 @@ Welcome to my public code repository used for academic instruction. This reposit
 
 ## Repository Structure
 
-- `src/main/{java|test}/book/` - Examples adapted or sourced from Cay Horstmann's [textbook](https://horstmann.com/oodp3/) and associated materials.
+- `src/main/{java|test}/<package>/book/` - Examples adapted or sourced from Cay Horstmann's [textbook](https://horstmann.com/oodp3/) and associated materials.
 - `src/main/{java|test}/patterns/` - Standard OOP design pattern examples (e.g., Vehicle/Shape hierarchies, Factory, Observer).
 - `src/main/{java|test}/<other_packages>` - Custom examples, exercises, and architectural designs created by Swaroop Joshi.
 - `docs/diagrams/` - UML diagrams and visual representations of class structures and relationships (with [Mermaid](https://mermaid.ai/open-source/intro/) syntax).
