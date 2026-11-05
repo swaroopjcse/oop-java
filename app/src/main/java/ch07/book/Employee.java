@@ -91,6 +91,6 @@ public class Employee implements Cloneable {
     if (obj == null) return false;
     if (getClass() != obj.getClass())
       return false; // standard opening till here
-    return getName() == ((Employee) obj).getName(); // class specific
+    return getName().equals(((Employee) obj).getName()); // class specific
   }
 }
