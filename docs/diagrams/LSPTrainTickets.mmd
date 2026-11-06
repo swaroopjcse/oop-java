@@ -1,0 +1,25 @@
+---
+config:
+  theme: neo
+  layout: elk
+---
+
+
+classDiagram
+  direction RL
+
+  class TrainTicket <<interface>> {
+    + getPnr() String
+    + getFarePaid() double
+  }
+
+
+  class CancellableTrainTicket <<interface>> {
+    + processCancellation() double
+  }
+
+  CancellableTrainTicket --|> TrainTicket
+
+  StandardTicket ..|> CancellableTrainTicket
+
+  ConfirmedTatkalTicket ..|> TrainTicket
