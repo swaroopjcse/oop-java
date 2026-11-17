@@ -1,0 +1,24 @@
+---
+config:
+  theme: 'neo'
+---
+
+classDiagram
+  direction BT
+
+  class Subject <<interface>> {
+    + register()
+    + unregister()
+    + notifyAllObservers()
+  }
+
+  class ChartObserver <<interface>> {
+    + onChartUpdate()
+  }
+
+  ChartNotificationManager ..|> Subject
+  SMSNotificationManager ..|> ChartObserver
+  TTEDesk ..|> ChartObserver
+  StationLEDDisplayManager ..|> ChartObserver
+
+  ChartNotificationManager "1" --o "*" ChartObserver

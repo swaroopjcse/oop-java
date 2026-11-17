@@ -1,0 +1,27 @@
+---
+config:
+  theme: 'neo'
+  hideEmptyMembersBox: true
+---
+
+classDiagram
+  direction LR
+  class SimpleMealFactory {
+    + createMeal()
+  }
+
+  class TrainPantry {
+    + orderMeal()
+  }
+
+  class Meal <<abstract>> {
+    + prepare()*
+    + cook()*
+    + pack()*
+  }
+
+  TrainPantry --> SimpleMealFactory 
+  SimpleMealFactory --> Meal
+
+  VegMeal --|> Meal
+  NonVegMeal --|> Meal

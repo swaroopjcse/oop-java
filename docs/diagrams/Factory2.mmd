@@ -1,0 +1,33 @@
+---
+config:
+  theme: 'neo'
+  hideEmptyMembersBox: true
+---
+
+classDiagram
+  direction BT
+
+  class Meal <<abstract>> {
+    + prepare()*
+    + cook()*
+    + pack()*
+  }
+
+  RajdhaniVegMeal --|> Meal
+  RajdhaniNonVegMeal --|> Meal
+  VandeBharatVegMeal --|> Meal
+  VandeBharatNonVegMeal --|> Meal
+
+
+  class TrainPantry <<abstract>> {
+    + orderMeal()
+    + createMeal()*
+  }
+
+  RajdhaniPantry --|> TrainPantry
+  VandeBharatPantry --|> TrainPantry
+    
+  RajdhaniPantry --> RajdhaniVegMeal
+  RajdhaniPantry --> RajdhaniNonVegMeal 
+  VandeBharatPantry --> VandeBharatVegMeal
+  VandeBharatPantry --> VandeBharatNonVegMeal 

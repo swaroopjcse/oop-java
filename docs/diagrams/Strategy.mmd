@@ -1,0 +1,25 @@
+---
+  config:
+    class:
+      hideEmptyMembersBox: false
+---
+
+classDiagram
+
+    class FareStrategy <<interface>>{
+        + computeFare() double
+    }
+
+    class FareCalculationContext {
+        - FareStrategy currentStrategy
+        + setStrategy() void
+        + executeCalculation() double
+    }
+
+    FareCalculationContext --o FareStrategy
+
+    GeneralFareStrategy ..|> FareStrategy
+
+    TatkalFareStrategy ..|> FareStrategy
+
+    SeniorsFareStrategy ..|> FareStrategy
